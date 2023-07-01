@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+    <title>Personal Portfolio Website</title>
+    <script
+      src="https://kit.fontawesome.com/d8e73b341a.js"
+      crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="header">
+      <div id="container">
+        <nav>
+          <h1><span>R</span>OCK.</h1>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <!-- <li><a href="#services">Service</a></li> -->
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contacts">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Frontend Developer</p>
+          <h1>
+            Hi,I'm Samuel <span>Rock</span><br />
+            from Nigeria
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!------------about---------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I am outgoing, dedicated, and open-minded. I get across to people
+              and adjust to changes with ease. I believe that a person should
+              work on developing their professional skills and learning new
+              things all the time.
+            </p>
+            <p class="sub-title active-link" onclick="opentab ('skills')">
+              Skills
+            </p>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JAVASCRIPT</li>
+                <li>BOOSTRIP</li>
+                <li>GitHUB</li>
+                <li>REACT</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-------------portfolio--------->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title work">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="./images/work-1.png" />
+            <div class="layer">
+              <h3>Weather App</h3>
+              <p>
+                The app allows you to check weather condition around the world.
+                Can be use on any server and responsive to Mobile.
+              </p>
+              <a href="http://www.weatherApp5751.netlify.app"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./images/work-2.png" />
+            <div class="layer">
+              <h3>Calculator</h3>
+              <p>
+                The app allows you to do maths calculation. Can be use on any
+                server and responsive to Mobile.
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./images/work-3.png" />
+            <div class="layer">
+              <h3>Pig Game</h3>
+              <p>
+                The app allows you to play a two man game,to row dice first to
+                count to 100. Can be use on any server and responsive to Mobile.
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+    <!------------contacts-------->
+    <div id="contacts">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>smrocks575@gmail.com</p>
+            <p><i class="fa-solid fa-square-phone"></i>08180117704</p>
+            <div class="social-icons">
+              <a href="http://www.facebook.com/@Nextofking1"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="http://www.twitter.com/@rock_samuel"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="http://www.tiktok.com/@callmenextofking"
+                ><i class="fa-brands fa-tiktok"></i
+              ></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="contact-right">
+            <form>
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"></textarea>
+              <button type="submit" class="btn btn2">submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <p class="copyright" behavior="scroll" scrollamount="15">
+        Copyright@Samuel Rock.Made with <i class="fa-solid fa-heart"></i> by
+        Easy Tutorials
+      </p>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>
